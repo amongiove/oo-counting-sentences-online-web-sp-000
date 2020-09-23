@@ -18,6 +18,8 @@ class String
   end
 
   def count_sentences
+    self.split("." || "," || "?").count
+     
 
   end
 end
