@@ -18,6 +18,8 @@ class String
   end
 
   def count_sentences
-    self.split(/[.!?]/).reject! { |s| s.nil? || s.strip.empty? }.count
+    array = self.split(/[.!?]/)
+    clean = array.reject! { |s| s.nil? || s.strip.empty? }
+    clean.count
   end
 end
